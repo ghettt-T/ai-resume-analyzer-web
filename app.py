@@ -29,5 +29,5 @@ if st.button("Analyze Resume"):
                 {"role": "user", "content": resume_text}
             ]
         )
-
-        st.write(response.choices[0].message.content)
+    st.subheader("📊 Resume Feedback")
+    st.write(response.choices[0].message.content)
