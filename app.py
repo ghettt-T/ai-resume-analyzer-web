@@ -7,7 +7,7 @@ import os
 import re
 from dotenv import load_dotenv
 load_dotenv()
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=st.secrets("OPENAI_API_KEY"))
 if "resume_text" not in st.session_state:
     st.session_state.setdefault("resume_text", "")
 st.title("🚀AI Resume Analyzer - Get Recruiter-Level Feedback in seconds")
