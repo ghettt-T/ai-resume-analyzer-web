@@ -238,4 +238,4 @@ if st.session_state.get("resume_text") and st.session_state.get("score"):
                 )
                 st.divider()
                 st.success("🔥 Your Resume has been upgraded")
-     st.info("💡 Tip: Tailor your resume for every job. ATS systems filter resumes before a human ever sees them.")
+        st.info("💡 Tip: Tailor your resume for every job. ATS systems filter resumes before a human ever sees them.")
